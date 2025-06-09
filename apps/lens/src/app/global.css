@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 0 0% 100%; /* Pure white */
+    --foreground: 0 0% 0%; /* Pure black */
+    
+    /* Card Colors */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 0%; /* Black */
+    
+    /* Popover Colors */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 0%; /* Black */
+    
+    /* Primary Colors */
+    --primary: 0 0% 0%; /* Black */
+    --primary-foreground: 0 0% 100%; /* White */
+    
+    /* Secondary Colors */
+    --secondary: 0 0% 95%; /* Very light gray */
+    --secondary-foreground: 0 0% 0%; /* Black */
+    
+    /* Muted Colors */
+    --muted: 0 0% 95%; /* Very light gray */
+    --muted-foreground: 0 0% 45%; /* Medium gray */
+    
+    /* Accent Colors */
+    --accent: 0 0% 95%; /* Very light gray */
+    --accent-foreground: 0 0% 0%; /* Black */
+    
+    /* Destructive Colors */
+    --destructive: 0 0% 50%; /* Medium gray */
+    --destructive-foreground: 0 0% 100%; /* White */
+    
+    /* Border Colors */
+    --border: 0 0% 90%; /* Light gray */
+    --input: 0 0% 90%; /* Light gray */
+    
+    /* Other */
+    --ring: 0 0% 0%; /* Black */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark mode - still monochrome but inverted */
+    --background: 0 0% 10%; /* Very dark gray */
+    --foreground: 0 0% 90%; /* Very light gray */
+    
+    --card: 0 0% 15%; /* Dark gray */
+    --card-foreground: 0 0% 90%; /* Very light gray */
+    
+    --popover: 0 0% 15%; /* Dark gray */
+    --popover-foreground: 0 0% 90%; /* Very light gray */
+    
+    --primary: 0 0% 90%; /* Very light gray */
+    --primary-foreground: 0 0% 10%; /* Very dark gray */
+    
+    --secondary: 0 0% 20%; /* Dark gray */
+    --secondary-foreground: 0 0% 90%; /* Very light gray */
+    
+    --muted: 0 0% 20%; /* Dark gray */
+    --muted-foreground: 0 0% 60%; /* Medium gray */
+    
+    --accent: 0 0% 20%; /* Dark gray */
+    --accent-foreground: 0 0% 90%; /* Very light gray */
+    
+    --destructive: 0 0% 40%; /* Gray */
+    --destructive-foreground: 0 0% 90%; /* Very light gray */
+    
+    --border: 0 0% 25%; /* Dark gray */
+    --input: 0 0% 25%; /* Dark gray */
+    
+    --ring: 0 0% 60%; /* Medium gray */
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;  /* This will now work */
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

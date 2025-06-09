@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "dev": "nx run lens:serve",
+    "build":"nx run lens:build",
+    "lint":"nx run lens:lint" 
   },
   "private": true,
   "dependencies": {

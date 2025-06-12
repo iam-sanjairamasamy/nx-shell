@@ -1,4 +1,4 @@
-# 🧱 Monorepo Starter: Nx + Next.js + Shadcn + Vite UI Libraries
+# 🧱 Monorepo Starter: Nx + Next.js + Shadcn with Vite bundler
 
 A modern, scalable monorepo boilerplate designed to **save you time** and **streamline development**. This project leverages **Nx** for monorepo management, **Next.js** for full-stack apps, **Tailwind CSS** + **shadcn/ui** for styling, and **Vite-based UI libraries** for blazing-fast component development.
 
@@ -8,7 +8,7 @@ A modern, scalable monorepo boilerplate designed to **save you time** and **stre
 
 - **Nx** for modular monorepo structure
 - **Next.js** for SSR/SSG-ready web apps
-- **Vite-powered UI libraries** under `libs/` for fast, independent development
+- **Shadcn UI libraries** under `libs/` for fast, independent development with vite bundler
 - **Tailwind CSS** and **shadcn/ui** for modern, customizable UI
 - **PNPM** for fast, disk-efficient package management
 - **TypeScript**, ESLint, Prettier & more — all preconfigured
